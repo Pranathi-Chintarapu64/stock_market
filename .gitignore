@@ -1,0 +1,10 @@
+.env
+__pycache__/
+*.pyc
+.DS_Store
+logs/
+airflow/logs/
+.vscode/
+.idea/
+*.db
+*.sqlite3
