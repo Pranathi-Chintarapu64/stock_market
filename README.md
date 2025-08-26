@@ -48,16 +48,17 @@ cd <your-repo>
 
 ### 2️. Create a .env file with environment variables
 ```bash
-API_KEY=your_api_key_here
-POSTGRES_USER=your_username
-POSTGRES_PASSWORD=your_password
-POSTGRES_DB=your_database 
+API_KEY
+POSTGRES_USER
+POSTGRES_PASSWORD
+POSTGRES_DB
 ```
 
 ### 3️. Start the pipeline with Docker Compose
 ```bash
 docker-compose up --build
 Access Airflow UI
+---
 Open: http://localhost:8080
 (Default credentials: airflow / airflow)
 ```
