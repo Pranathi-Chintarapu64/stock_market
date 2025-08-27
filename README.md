@@ -42,26 +42,34 @@ It demonstrates how **orchestration, error handling, and environment variable–
 
 ### 1️. Clone the repository  
 ```bash
-git clone https://github.com/<your-username>/<your-repo>.git
-cd <your-repo>
+git clone https://github.com/<username>/<repo>.git
+cd <repo>
 ```
 
 ### 2️. Create a .env file with environment variables
 ```bash
-API_KEY
-POSTGRES_USER
-POSTGRES_PASSWORD
-POSTGRES_DB
+POSTGRES_USER 
+POSTGRES_PASSWORD  
+POSTGRES_DB 
+POSTGRES_PORT 
+ALPHAVANTAGE_API_KEY 
+SYMBOLS=AAPL,GOOG,MSFT  
+SCHEDULE_INTERVAL=@daily  
+PGADMIN_DEFAULT_EMAIL 
+PGADMIN_DEFAULT_PASSWORD
+
 ```
 
 ### 3️. Start the pipeline with Docker Compose
 ```bash
 docker-compose up --build
-Access Airflow UI
----
-Open: http://localhost:8080
-(Default credentials: airflow / airflow)
 ```
+This will start:
+
+- Airflow Webserver (http://localhost:8080)
+- Airflow Scheduler
+- PostgreSQL (port 5432)
+- PgAdmin (http://localhost:5050)
 
 Trigger the DAG stock_data_pipeline to start fetching and storing stock data.
 
