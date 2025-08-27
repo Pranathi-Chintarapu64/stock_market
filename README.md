@@ -101,6 +101,11 @@ After triggering the DAG, the status of the task can ve viewed:
 ![Airflow Graph View](docs/example2.png)
 ---
 
+### 3. PostgreSQL stock_prices Table
+The DAG stores fetched stock data in the stock_prices table:
+
+![stock prices](docs/example3.png)
+
 ## Reference
 Full project code and setup available here:
 👉 [Project Repository](https://github.com/Pranathi-Chintarapu64/stock_market)
