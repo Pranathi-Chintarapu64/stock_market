@@ -6,7 +6,7 @@ load_dotenv()
 class Settings:
     POSTGRES_USER: str = os.getenv("POSTGRES_USER", "airflow")
     POSTGRES_PASSWORD: str = os.getenv("POSTGRES_PASSWORD", "airflow")
-    POSTGRES_DB: str = os.getenv("POSTGRES_DB", "stocks")
+    POSTGRES_DB: str = os.getenv("POSTGRES_DB", "stock_db")
     POSTGRES_HOST: str = os.getenv("POSTGRES_HOST", "postgres")
     POSTGRES_PORT: int = int(os.getenv("POSTGRES_PORT", 5432))
 
