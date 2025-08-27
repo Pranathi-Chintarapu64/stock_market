@@ -66,10 +66,10 @@ docker-compose up --build
 ```
 This will start:
 
-- Airflow Webserver (http://localhost:8080)
+- Airflow Webserver 
 - Airflow Scheduler
 - PostgreSQL (port 5432)
-- PgAdmin (http://localhost:5050)
+- PgAdmin 
 
 Trigger the DAG stock_data_pipeline to start fetching and storing stock data.
 
