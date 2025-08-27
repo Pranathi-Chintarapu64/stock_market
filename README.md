@@ -84,6 +84,22 @@ Trigger the DAG stock_data_pipeline to start fetching and storing stock data.
 
 ✔ README.md – Explains how to run and use the project.
 
+---
+## Expected Output
+### 1. Airflow UI (DAGs List)
+Once the containers are running, the Airflow web UI can be accessed(port 8080).  
+The DAG `stock_data_pipeline` is listed as:
+
+![Airflow DAG List](docs/example1.png)
+
+---
+
+### 2. Airflow DAG Run
+After triggering the DAG, the status of the task can ve viewed:  
+
+![Airflow Graph View](docs/example2.png)
+---
+
 ## Reference
 Full project code and setup available here:
 👉 [Project Repository](https://github.com/Pranathi-Chintarapu64/stock_market)
