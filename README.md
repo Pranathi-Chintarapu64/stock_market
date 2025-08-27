@@ -51,7 +51,8 @@ cd <repo>
 POSTGRES_USER 
 POSTGRES_PASSWORD  
 POSTGRES_DB 
-POSTGRES_PORT 
+POSTGRES_PORT
+POSTGRES_HOST = localhost
 ALPHAVANTAGE_API_KEY 
 SYMBOLS=AAPL,GOOG,MSFT  
 SCHEDULE_INTERVAL=@daily  
@@ -68,7 +69,7 @@ This will start:
 
 - Airflow Webserver 
 - Airflow Scheduler
-- PostgreSQL (port 5432)
+- PostgreSQL (port 5432, host name/ address - postgres)
 - PgAdmin 
 
 Trigger the DAG stock_data_pipeline to start fetching and storing stock data.
