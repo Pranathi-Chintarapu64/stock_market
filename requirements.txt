@@ -1,0 +1,8 @@
+apache-airflow
+SQLAlchemy
+psycopg2-binary
+requests
+tenacity
+python-dotenv
+pydantic
+pytest
